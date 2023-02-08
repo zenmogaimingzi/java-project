@@ -1,0 +1,25 @@
+server:
+  port: 9090
+spring:
+    # jpa配置
+  jpa:
+    hibernate:
+      ddl-auto: none #update自动生成数据库表 none无变化
+      database: mysql
+    show-sql: true #是否显示sql
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: root123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+rocketmq:
+  #rocketmq消息端口
+  name-server: localhost:9876
+  #rocketmq发送组
+  producer:
+    group: group1
