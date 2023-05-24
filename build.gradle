@@ -36,7 +36,8 @@ dependencies {
     implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
     implementation group: 'commons-logging', name: 'commons-logging', version: '1.2'
     implementation group: 'redis.clients', name: 'jedis', version: '4.3.1'
-
+    // https://mvnrepository.com/artifact/p6spy/p6spy
+    implementation group: 'p6spy', name: 'p6spy', version: '3.9.1'
 
     compileOnly 'org.projectlombok:lombok:1.18.2'
     annotationProcessor 'org.projectlombok:lombok:1.18.2'
